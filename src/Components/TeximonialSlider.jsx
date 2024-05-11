@@ -1,35 +1,35 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const Teximonial = () => {
-    const [testimonial, setTestimonial] = useState([]);
-    // console.log(testimonial);
-    useEffect(() => {
-      axios.get("https://admin.rockriders.in/api/testimonial").then((res) => {
-        return setTestimonial(res.data.data.data);
-      });
-    }, []);
+  const [testimonial, setTestimonial] = useState([]);
+  // console.log(testimonial);
+  useEffect(() => {
+    axios.get("https://admin.rockriders.in/api/testimonial").then((res) => {
+      return setTestimonial(res.data.data.data);
+    });
+  }, []);
 
-    const options = {
-        items: 3, // Number of items to show
-        loop: true, // Infinite loop
-        autoplay: true, // Autoplay
-        autoplayTimeout: 3000, // Autoplay interval in milliseconds
-        responsive: {
-            0: {
-                items: 1 // Number of items to show on small screens
-            },
-            768: {
-                items: 2 // Number of items to show on medium screens
-            },
-            1024: {
-                items: 3 // Number of items to show on large screens
-            }
-        }
-    };
+  const options = {
+    items: 3, // Number of items to show
+    loop: true, // Infinite loop
+    autoplay: true, // Autoplay
+    autoplayTimeout: 3000, // Autoplay interval in milliseconds
+    responsive: {
+      0: {
+        items: 1, // Number of items to show on small screens
+      },
+      768: {
+        items: 2, // Number of items to show on medium screens
+      },
+      1024: {
+        items: 3, // Number of items to show on large screens
+      },
+    },
+  };
 
   return (
     <div className="testimonial-area py-120">
@@ -47,7 +47,7 @@ const Teximonial = () => {
             </div>
           </div>
         </div>
-        <OwlCarousel className="owl-theme"{...options}>
+        <OwlCarousel className="owl-theme" {...options}>
           {testimonial &&
             testimonial.map((textimonialData, key) => (
               <div className="testimonial-single">

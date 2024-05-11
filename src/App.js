@@ -11,6 +11,7 @@ import Registration from './Components/Registration';
 import ForgotPassword from './Components/ForgotPassword';
 import MobileBookCabs from './Components/Mobile/MobileBookCabs';
 import Googlemap from './Components/Mobile/Googlemap';
+
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ function App() {
           <Route path="/ForgotPassword" element={<ForgotPassword/>}/>
           <Route path="/MobileBookCabs" element={<MobileBookCabs />} />
           <Route path="/googleMap" element={<Googlemap/>} />
+          
           </>
       </Routes>
     </BrowserRouter>

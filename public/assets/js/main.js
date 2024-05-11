@@ -5,3 +5,16 @@ let date=new Date().getFullYear();$("#date").html(date);$('.select').niceSelect(
 var tooltipList=tooltipTriggerList.map(function(tooltipTriggerEl){return new bootstrap.Tooltip(tooltipTriggerEl)})
 $(".profile-img-btn").on('click',function(){$(".profile-img-file").click();});if($('.date-picker').length){$(function(){$(".date-picker").datepicker();});}
 if($('.time-picker').length){$(function(){$(".time-picker").timepicker();});}})(jQuery);
+
+
+$(document).ready(function(){
+    $(window).bind('scroll', function() {
+    var navHeight = $( window ).height() - 70;
+          if ($(window).scrollTop() > navHeight) {
+              $('nav').addClass('fixed');
+          }
+          else {
+              $('nav').removeClass('fixed');
+          }
+     });
+ });

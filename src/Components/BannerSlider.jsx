@@ -1,18 +1,18 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const BannerSlider = () => {
-    const [slider, setSlider] = useState([]);
+  const [slider, setSlider] = useState([]);
   // console.log(slider);
   useEffect(() => {
     axios.get("https://admin.rockriders.in/api/slider").then((res) => {
       return setSlider(res.data.data);
     });
   }, []);
-  
+
   const options = {
     loop: true,
     margin: 0,
@@ -42,8 +42,7 @@ const BannerSlider = () => {
               <div
                 className="hero-single"
                 style={{
-                  background: `url(https://admin.rockriders.in/${slideData.slider_image})`,
-                }}
+                  background: `url(https://admin.rockriders.in/${slideData.slider_image})`}}
               >
                 <div className="container">
                   <div className="row align-items-center">
