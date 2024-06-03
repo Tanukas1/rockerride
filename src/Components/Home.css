@@ -262,22 +262,305 @@ body:not(.rtl) .elementor-163 .elementor-element.elementor-element-5775e8f {
 }
 
 /* form */
-.card2{
+.form{
     position: absolute;
-    padding: 0px 20px 0px 20px;
-    top: 23%;
-    left: 60rem;
+    top: 31%;
+    right: 120px;
     z-index: 9;
-    width: 35%;
-    background-color: #28417a;
+    width: 30%;
 }
+
 @media only screen and (max-width: 768px) {
-  .card2 {
+  .form {
     position: relative;
     left: 0px;
-    top: 1rem;
+    top: 0rem;
     width: 100%;
   }
 }
+.box{
+  background-color:#F1F1F1;
+  padding: 20px;
+}
 
 
+.custom-input {
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.2em solid #34467b;
+  background: rgb(249, 249, 255);
+  border-radius: 0.2em 0.2em 0 0;
+  padding: 0.4em;
+  padding-left: 2em; /* Add padding to the left for the icon */
+  color: black;
+  width: 100%;
+}
+.custom-inputs {
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.2em solid #34467b;
+  background: rgb(249, 249, 255);
+  border-radius: 0.2em 0.2em 0 0;
+  padding: 0.4em;
+  padding-left: 2em;
+  color: black;
+  width: 200%;
+}
+
+.input-group {
+  position: relative;
+}
+
+.icon-inside {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #020202; /* Adjust the icon color if necessary */
+  pointer-events: none; /* Ensure the icon doesn't block input events */
+  /* z-index: 999; */
+}
+.icon-insidess {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #020202; /* Adjust the icon color if necessary */
+  pointer-events: none; /* Ensure the icon doesn't block input events */
+  z-index: 999;
+}
+.form-select {
+  appearance: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.2em solid #34467b;
+  background: rgb(249 249 255)                           ;
+  border-radius: 0.2em 0.2em 0 0;
+  padding: 0.4em;
+  padding-left: 2em; /* Add padding to the left for the icon */
+  color: black;
+  width: 100%;; /* Ensure no default dropdown arrow */
+}
+
+.form-select-container {
+  position: relative;
+  width: 100%;
+}
+.form-controls {
+  display: block;
+  width: 185%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+@media only screen and (max-width: 768px) {
+  
+.form-controls {
+  display: block;
+  width: 130%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+}
+/* 
+.icon-inside {
+  position: absolute;
+  right: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #020202; 
+  pointer-events: none;
+  font-size: 1.2em; 
+} */
+
+
+/* optional: custom styles for the date picker calendar */
+.react-datepicker {
+  font-size: 14px;
+}
+
+
+/* footer button */
+.getcall .mobile-fixed{
+  display: none;
+}
+@media only screen and (max-width: 767px) {
+  .mobile-fixed {
+      display: block !important;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999999;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .appoint {
+      
+      width: 50%;
+      background: #104b8f;
+      padding: 10px;
+      float: left;
+      text-align: center;
+      font-size: 18px;
+      -webkit-animation: glowing 1500ms infinite;
+      -moz-animation: glowing 1500ms infinite;
+      -o-animation: glowing 1500ms infinite;
+      animation: glowing 1500ms infinite;
+  }
+  .appoint a {
+      
+   color: #fff;
+}
+.call {
+  border: none;
+  background: #177436;
+  text-align: center;
+  color: white;
+  padding: 10px;
+  width: 50%;
+  float: left;
+  font-size: 18px;
+  animation: drift 3s linear infinite;
+}
+.call a {
+
+  color: #fff;
+}
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:60px;
+	right:18px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* form */
+@media only screen and (max-width: 767px) {
+  .site-title-tagline {
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--theme-color);
+    left:20px;
+}
+}
+@media only screen and (max-width: 767px) {
+  .site-title {
+    position: relative;
+    /* left:20px; */
+}
+}
+/* hero */
+/* home.css */
+@media (max-width: 767px){
+  .hero-single .hero-content .hero-title {
+      font-size: 24px;
+      left: -24rem;
+  }
+  .hero-single .hero-content .hero-sub-title {
+      font-size: 14px;
+      left: -24rem;
+  }
+.hero-single {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+}
+
+/* window on load popup form */
+.popup {
+  display: none; /* Initially hidden */
+  position: fixed; /* Ensures the popup overlays other content */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  z-index: 10; /* Ensure the popup is on top of other elements */
+}
+
+.popup.show {
+  display: block; /* Make the popup visible */
+}
+
+.popup-content {
+  margin: 220px auto; /* Center the popup content */
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 550px;
+}
+.close-button-container {
+  text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  
+
+    .form-group {
+      display: flex; /* Use flexbox for form fields */
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+
+    .popup-content {
+      margin: 100px auto; /* Adjust margin for better centering */
+      background-color: #fff;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    .close-button-container {
+      text-align: right;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .popup-content {
+        width: 100%;
+        margin: 118 auto;
+      }
+
+}
+}

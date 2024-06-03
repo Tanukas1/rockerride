@@ -1,6 +1,5 @@
 import React from "react";
 import TeximonialSlider from "../TeximonialSlider";
-import "./Mobile.css";
 import { useState, useEffect } from "react";
 import { GoogleMap, LoadScript, Marker, Polygon } from "@react-google-maps/api";
 

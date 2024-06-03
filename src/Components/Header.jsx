@@ -1,5 +1,5 @@
 import React from "react";
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 function Header() {
   return (
     <>
@@ -11,14 +11,14 @@ function Header() {
                 <div className="header-top-contact">
                   <ul>
                     <li>
-                      <a href="">
-                        <i className="far fa-envelopes" />
-                        <span>[Manishkatiyar13@gmil.com]</span>
+                      <a href="mailto:contact@rockriders.in">
+                        <i className="far fa-envelope" />
+                        <span>contact@rockriders.in</span>
                       </a>
                     </li>
                     <li>
-                      <a href="tel:+21236547898">
-                        <i className="far fa-phone-volume" /> +2 123 654 7898
+                      <a href="tel:+7309619301">
+                        <i className="fas fa-phone-volume" /> +91 7309619301
                       </a>
                     </li>
                   </ul>
@@ -38,15 +38,11 @@ function Header() {
                   <a href="#">
                     <i className="fab fa-facebook" />
                   </a>
-                  <a href="#">
-                    <i className="fab fa-twitter" />
-                  </a>
+                  
                   <a href="#">
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin" />
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -55,7 +51,7 @@ function Header() {
         <div className="main-navigation" id="screen1">
           <nav className="navbar navbar-expand-lg">
             <div className="container position-relative">
-              <a className="navbar-brand" href="index.html">
+              <a className="navbar-brand" href="">
                 <img src="assets/img/logo/logo.webp" alt="logo" />
               </a>
               <div className="mobile-menu-right">
@@ -107,7 +103,7 @@ function Header() {
                 </ul>
                 <div className="nav-right">
                   <div className="nav-right-btn mt-2">
-                    <a href="#" className="theme-btn">
+                    <a href="get-caps" className="theme-btn">
                       <span className="fas fa-taxi" />
                       Book A Taxi
                     </a>
@@ -119,73 +115,6 @@ function Header() {
         </div>
       </header>
 
-      <div className="sidebar-popup">
-        <div className="sidebar-wrapper">
-          <div className="sidebar-content">
-            <button type="button" className="close-sidebar-popup">
-              <i className="far fa-xmark" />
-            </button>
-            <div className="sidebar-logo">
-              <img src="assets/img/logo/logo.png" alt="" />
-            </div>
-            <div className="sidebar-about">
-              <h4>About Us</h4>
-              <p>
-                There are many variations of passages available sure there
-                majority have suffered alteration in some form by injected
-                humour or randomised words which don't look even slightly
-                believable.
-              </p>
-            </div>
-            <div className="sidebar-contact">
-              <h4>Contact Info</h4>
-              <ul>
-                <li>
-                  <h6>Email</h6>
-                  <a href="https://live.themewild.com/cdn-cgi/l/email-protection#4a23242c250a2f322b273a262f64292527">
-                    <i className="far fa-envelope" />
-                    <span
-                      className="__cf_email__"
-                      data-cfemail="c8a1a6aea788adb0a9a5b8a4ade6aba7a5"
-                    >
-                      [email&nbsp;protected]
-                    </span>
-                  </a>
-                </li>
-                <li>
-                  <h6>Phone</h6>
-                  <a href="tel:+21236547898">
-                    <i className="far fa-phone" />
-                    +2 123 654 7898
-                  </a>
-                </li>
-                <li>
-                  <h6>Address</h6>
-                  <a href="#">
-                    <i className="far fa-location-dot" />
-                    25/B Milford Road, New York
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div className="sidebar-social">
-              <h4>Follow Us</h4>
-              <a href="#">
-                <i className="fab fa-facebook" />
-              </a>
-              <a href="#">
-                <i className="fab fa-twitter" />
-              </a>
-              <a href="#">
-                <i className="fab fa-instagram" />
-              </a>
-              <a href="#">
-                <i className="fab fa-linkedin" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
     </>
   );
 }

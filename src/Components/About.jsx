@@ -16,7 +16,7 @@ export default function About() {
     <>
       {isMobile ? <MobileHeader /> : <Header />}
 
-      <div className="about-area py-120">
+      <div className="about-area py-2">
         <div className="container py-3">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -32,13 +32,14 @@ export default function About() {
                 data-wow-delay=".25s"
               >
                 <div className="site-heading mb-3">
-                  <span className="site-title-tagline justify-content-start">
+                  {/* <span className="site-title-tagline justify-content-start">
                     <i className="flaticon-drive" />
                     {about.heading}
-                  </span>
+                  </span> */}
                   <h2 className="site-title">{about.title}</h2>
                 </div>
-                <p className="about-text">{about.paragraph1}</p>
+                {/* <p className="about-text">{about.paragraph1}</p> */}
+                <div dangerouslySetInnerHTML={{ __html: about.paragraph1 }} />
               </div>
             </div>
           </div>

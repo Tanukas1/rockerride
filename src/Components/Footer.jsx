@@ -2,6 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
+  <>
     <footer className="footer-area">
       <div className="footer-widget">
         <div className="container">
@@ -18,25 +19,23 @@ function Footer() {
                 </p>
                 <ul className="footer-contact">
                   <li>
-                    <a href="tel:+21236547898">
-                      <i className="far fa-phone" />
-                      +2 123 654 7898
+                    <a href="tel:+917309619301">
+                      <i className="fas fa-phone" /> +91 7309619301
                     </a>
                   </li>
                   <li>
-                    <i className="far fa-map-marker-alt" />
-                    Manishkatiyar13@gmil.com
+                    <i className="fas fa-map-marker-alt" />
+                    <span>297 CHANDRALOK COLONY LUCKNOW 226024</span>
                   </li>
                   <li>
-                    <a href="">
-                      <i className="far fa-envelope" />
-                      <span>297 CHANDRALOK COLONY LUCKNOW 226024</span>
+                    <a href="mailto:contact@rockriders.in">
+                      <i className="fas fa-envelope" /> contact@rockriders.in
                     </a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-6 col-sx-6 col-md-6 col-lg-3">
               <div className="footer-widget-box list">
                 <h4 className="footer-widget-title">Quick Links</h4>
                 <ul className="footer-list">
@@ -45,11 +44,11 @@ function Footer() {
                       <i className="fas fa-caret-right" /> About Us
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">
                       <i className="fas fa-caret-right" /> Update News
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#">
                       <i className="fas fa-caret-right" /> Testimonials
@@ -65,15 +64,15 @@ function Footer() {
                       <i className="fas fa-caret-right" /> Privacy policy
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">
                       <i className="fas fa-caret-right" /> Our Drivers
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-6 col-sx-6 col-md-6 col-lg-3">
               <div className="footer-widget-box list">
                 <h4 className="footer-widget-title">Support Center</h4>
                 <ul className="footer-list">
@@ -82,11 +81,11 @@ function Footer() {
                       <i className="fas fa-caret-right" /> FAQ's
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">
                       <i className="fas fa-caret-right" /> Affiliates
                     </a>
-                  </li>
+                  </li> */}
                   <li>
                     <a href="#">
                       <i className="fas fa-caret-right" /> Booking Tips
@@ -102,11 +101,11 @@ function Footer() {
                       <i className="fas fa-caret-right" /> Contact Us
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="#">
                       <i className="fas fa-caret-right" /> Sitemap
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -131,25 +130,29 @@ function Footer() {
                 </li>
                 <li>
                   <a href="#">
-                    <i className="fab fa-twitter" />
+                    <i className="fab fa-instagram" />
                   </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fab fa-youtube" />
-                  </a>
-                </li>
+                </li>      
               </ul>
             </div>
           </div>
         </div>
       </div>
-    </footer>
+     
+      </footer>
+      <div class="getcall mobile-fixed" style={{display: "none"}} >
+          <div className="row">
+              <div class="col-xs-6 appoint"><a href="#formbox"><span>Book Taxi</span></a></div>
+              <div class="col-xs-6 call"><a href="tel:+91 7309619301">Call Now</a></div>
+          </div>
+        </div>
+   
+        <a href="https://wa.me/919076538003" class="float" target="_blank">
+          <i class="fab fa-whatsapp my-float"></i>
+        </a>
+
+       
+  </>
   );
 }
 

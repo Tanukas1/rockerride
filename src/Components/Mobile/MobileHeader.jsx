@@ -41,11 +41,11 @@ export default function MobileHeader() {
           <div className="sd-header">
             <a className="navbar-brand">
               <img
-                src="assets/img/mobile/profile.jpg"
+                src="assets/img/logo/logo.webp"
                 class="rounded-circle"
-                style={{ width: "40px" }}
+                // style={{ width: "100px" }}
               />
-              <h6 className="">My Profile</h6>
+              
             </a>
             <div className="btn btn-primary" onClick={ToggleSidebar}>
               <i className="fa fa-times"></i>

@@ -10,7 +10,7 @@ export default function Contacts() {
       {isMobile ? <MobileHeader /> : <Header />}
 
       <>
-        <div className="contact-area py-4">
+        <div className="contact-area py-2">
           <div className="container">
             <div className="contact-content">
               <div className="row">
@@ -32,7 +32,7 @@ export default function Contacts() {
                     </div>
                     <div className="contact-info-content">
                       <h5>Call Us</h5>
-                      <p>+91 9076538003</p>
+                      <p>+91 7309619301</p>
                     </div>
                   </div>
                 </div>
@@ -43,7 +43,7 @@ export default function Contacts() {
                     </div>
                     <div className="contact-info-content">
                       <h5>Email Us</h5>
-                      <p>Manishkatiyar13@gmil.com</p>
+                      <p>contact@rockriders.in</p>
                     </div>
                   </div>
                 </div>

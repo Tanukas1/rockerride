@@ -32,14 +32,12 @@ const Teximonial = () => {
   };
 
   return (
-    <div className="testimonial-area py-120">
+    <div className="testimonial-area py-3">
       <div className="container">
         <div className="row">
           <div className="col-lg-6 mx-auto">
             <div className="site-heading text-center">
-              <span className="site-title-tagline">
-                <i className="flaticon-drive" /> Testimonials
-              </span>
+             
               <h2 className="site-title text-white">
                 What Our Client <span>Say's</span>
               </h2>
@@ -59,13 +57,9 @@ const Teximonial = () => {
                   </div>
                   <div className="testimonial-author-info">
                     <h4>{textimonialData.name}</h4>
-                    <p>Customer</p>
                   </div>
                 </div>
                 <div className="testimonial-quote">
-                  <span className="testimonial-quote-icon">
-                    <i className="far fa-quote-right" />
-                  </span>
                   <p>{textimonialData.content}</p>
                 </div>
                 <div className="testimonial-rate">
